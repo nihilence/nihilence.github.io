@@ -10,12 +10,21 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.container {
+.container h1 {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 42%;
 }
 
+/*.main{
+  display:block;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+}*/
 section {
   display: block;
   margin: 0 0 20px 0;
@@ -46,7 +55,6 @@ header {
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -233,7 +241,7 @@ a {
 
 /* Clearfix */
 
-.cf:before, .cf:after {
+/*.cf:before, .cf:after {
   content:"";
   display:table;
 }
@@ -244,4 +252,70 @@ a {
 
 .cf {
   zoom:1;
+}*/
+
+.head-left{
+  float: left;
+}
+
+.head-right{
+  float:right;
+}
+
+.head-left>li, .head-right>li{
+  float:left;
+  margin:30px;
+  margin-top:0;
+}
+
+header a{
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover{
+  color:#b5e853;
+}
+
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+.typing{
+  opacity: 0.8;
+	text-shadow: none;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 15px;
+	border-right: 1px solid #6b7381;
+	width: 45ch;
+	margin-left: 35%;
+	padding: 0;
+	white-space: nowrap;
+	overflow: hidden;
+  -webkit-animation: typing 2s steps(34, end),
+  	           blink-caret .7s step-end infinite alternate;
+}
+
+footer img{
+  position:relative;
+  height:60px;
+  width:120px;
+  margin-left:45%;
+  /*margin-top:40%;*/
+}
+
+footer{
+  opacity:.5;
+  height:60px;
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  /*background-color: #6d695c;*/
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 90px 190px;
+
 }
